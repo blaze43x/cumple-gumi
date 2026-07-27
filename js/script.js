@@ -26,6 +26,11 @@ const MESSAGES = [
     from: "Danny",
     text: "Hi Gumii 💕 te deseo un feliz cumpleaños rodeado de toda tu familia , te mando un fuerte abrazo y vibras bonitas hoy en tu día! Happy birthday girl~ 💫",
   },
+  {
+    from: "Yinxx",
+    text: "Feliz cumpleaños gumiiiii espero que te la pases muy bien en este día especial y te diviertas mucho :3, eres alguien muy divertida y agradezco mucho que seamos amigos, es una amistad que valoró mucho y espero que dure por mucho más tiempo 🥳🥳🥳  cualquier cosita sabes que puedes mandar mensaje sin ningún problema :3 feliz cumpleañooos guapaa 🥳🥳👀",
+    image: "img/sonic-yinxx.png",
+  },
 ];
 /* ================================ */
 
@@ -61,6 +66,11 @@ function renderMessages() {
     <article class="message-card">
       <p class="from">${escapeHtml(msg.from)}</p>
       <p class="body">${escapeHtml(msg.text)}</p>
+      ${
+        msg.image
+          ? `<img class="message-image" src="${escapeHtml(msg.image)}" alt="Imagen de ${escapeHtml(msg.from)}" loading="lazy" />`
+          : ""
+      }
     </article>
   `
   ).join("");
