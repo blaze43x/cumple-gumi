@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz cumpleaños</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero" id="hero">
+      <p class="eyebrow">Una sorpresa para ti</p>
+
+      <div class="avatar-wrap">
+        <img
+          class="avatar"
+          src="img/Avatar Gumi.png"
+          alt="Foto de perfil de Gumiho"
+          id="profilePhoto"
+        />
+        <div class="avatar-fallback" id="avatarFallback" aria-hidden="true">G</div>
+      </div>
+
+      <h1 class="title">Hey, Gumiho</h1>
+      <p class="lead">
+        Hoy no es un día cualquiera. Es el día en que llegó al mundo
+        nuestra persona favorita.
+      </p>
+
+      <button class="cta" type="button" id="scrollToMessages">
+        Abrir tus mensajes
+      </button>
+    </section>
+
+    <section class="messages" id="messages" aria-labelledby="messages-title">
+      <h2 class="messages-title" id="messages-title">Con cariño de tus amigos</h2>
+      <p class="messages-subtitle">Pequeñas palabras, mucho afecto.</p>
+      <div class="messages-grid" id="messagesGrid"></div>
+    </section>
+
+    <footer class="footer">
+      <p>Hecho con cariño para tu día especial</p>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
