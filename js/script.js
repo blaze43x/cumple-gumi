@@ -19,7 +19,7 @@ const MESSAGES = [
     text: "Feliz cumpleaños Gumi!!! Este día es muy especial porque una persona maravillosa como tú esta cumpliendo años. Gracias por todos los momentos que pudiste estar. Disfruta de este día como nunca y que sepas que te deseo lo mejor en este hermoso día. Gracias por los Karaokes y los dramas en vez en cuando.\nPs: enséñame a cantar xd Feliz Cumpleaños 🎂🥳",
   },
   {
-    from: "PlaboSantiago",
+    from: "Santy",
     text: "Hola Gumi espero que te la pases mui bien por tu cumpleaños disfruta mucho tu día y cuídate mucho va feliz cumpleaños🎂            🦜",
   },
 ];
