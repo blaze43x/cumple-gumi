@@ -22,6 +22,10 @@ const MESSAGES = [
     from: "Santy",
     text: "Hola Gumi espero que te la pases mui bien por tu cumpleaños disfruta mucho tu día y cuídate mucho va feliz cumpleaños🎂            🦜",
   },
+  {
+    from: "Danny",
+    text: "Hi Gumii 💕 te deseo un feliz cumpleaños rodeado de toda tu familia , te mando un fuerte abrazo y vibras bonitas hoy en tu día! Happy birthday girl~ 💫",
+  },
 ];
 /* ================================ */
 
