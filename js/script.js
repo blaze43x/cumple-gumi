@@ -7,31 +7,31 @@ const PROFILE = {
 
 const MESSAGES = [
   {
-    from: "Abraham",
-    text: "Feliz cumpleaños. Gracias por ser luz en los días normales y magia en los especiales. Te mereces lo mejor hoy y siempre.",
+    from: "Blaze43x",
+    text: "Feliz cumpleaños hermana, espero que pases un gran día lleno de alegría y momentos que te hagan sonreir. Sabes que te quiero mucho y para ser sincero, eres de las personas más esperanzadores y fuertes que he conocido 💪✨.  Gracias de todo corazón por siempre escucharme, apoyarme y estar ahí cuando más lo necesitaba. Nuestra amistad es algo que valoro cada día y aunque no te hable de manera constante quiero que sepas que siempre puedes contar conmigo para cualquier cosa. Espero que vengan cosas increibles para ti en este nuevo año de vida",
   },
   {
-    from: "Amiga 1",
-    text: "Que este año te regale risas, calma y todo lo que tanto deseas. ¡Feliz cumpleaños!",
+    from: "Mitsuri",
+    text: "【♡】Feliz cumpleaños, amiguita gumiho. No sabes lo feliz que me hace poder celebrar un año más de tu vida, aunque nos separe una pantalla. A veces la gente no entiende cómo se puede querer tanto a alguien que está al otro lado del mundo o de un chat, pero tú te has vuelto una pieza fundamental en mis días. Gracias por cada llamada, por cada mensaje, por aguantar mis dramas y por estar siempre ahí. Eres una persona increíble, con un corazón gigantesco y un talento único que ilumina cualquier lugar (y cualquier canal de voz). Te mereces todo lo bonito que tiene este mundo hoy y siempre. Disfruta muchísimo tu día, come pastel de mi parte y que cumplas muchos años más llena de salud y felicidad 【☆】",
   },
   {
-    from: "Amigo 2",
-    text: "Eres de esas personas que hacen que todo se sienta más cálido. Celebra en grande, te lo mereces.",
+    from: "Estrellita",
+    text: "Feliz cumpleaños Gumi!!! Este día es muy especial porque una persona maravillosa como tú esta cumpliendo años. Gracias por todos los momentos que pudiste estar. Disfruta de este día como nunca y que sepas que te deseo lo mejor en este hermoso día. Gracias por los Karaokes y los dramas en vez en cuando.\nPs: enséñame a cantar xd Feliz Cumpleaños 🎂🥳",
   },
   {
-    from: "Amiga 3",
-    text: "Por muchos más momentos juntos, más historias y más sonrisas. ¡Feliz día!",
+    from: "PlaboSantiago",
+    text: "Hola Gumi espero que te la pases mui bien por tu cumpleaños disfruta mucho tu día y cuídate mucho va feliz cumpleaños🎂            🦜",
   },
 ];
 /* ================================ */
 
 function setupProfile() {
-  const title = document.querySelector(".title");
+  const nameEl = document.getElementById("profileName");
   const fallback = document.getElementById("avatarFallback");
   const photo = document.getElementById("profilePhoto");
   const wrap = document.querySelector(".avatar-wrap");
 
-  if (title) title.textContent = `Hey, ${PROFILE.name}`;
+  if (nameEl) nameEl.textContent = PROFILE.name;
   if (fallback) fallback.textContent = PROFILE.initial || PROFILE.name.charAt(0);
 
   if (PROFILE.photo && photo) {
@@ -70,18 +70,7 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;");
 }
 
-function setupScrollButton() {
-  const button = document.getElementById("scrollToMessages");
-  const section = document.getElementById("messages");
-  if (!button || !section) return;
-
-  button.addEventListener("click", () => {
-    section.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   setupProfile();
   renderMessages();
-  setupScrollButton();
 });
